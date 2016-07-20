@@ -9,11 +9,25 @@ gulp.task('pug-compile', () => {
     .pipe(pug({
       pretty: true,
     }))
-    .pipe(gulp.dest('./public/'))
+    .pipe(gulp.dest('./public/'));
 });
 
 gulp.task('sass-compile', () => {
   return gulp.src('./src/styles/main.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./public/css/'))
-})
+    .pipe(gulp.dest('./public/css/'));
+});
+
+gulp.task('babel-compile', () => {
+  return gulp.src('./src/scripts/*.js')
+    .pipe(babel({
+      presets: ['es2015'],
+    }))
+    .pipe(gulp.dest('./public/js/'));
+});
+
+gulp.task('watch', () => {
+  gulp.watch('./src/scripts/*.js', ['babel-compile']);
+  gulp.watch('./src/styles/*.scss', ['sass-compile']);
+  gulp.watch('./src/views/*.pug', ['pug-compile']);
+});
