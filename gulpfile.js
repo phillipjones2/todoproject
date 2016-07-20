@@ -31,3 +31,5 @@ gulp.task('watch', () => {
   gulp.watch('./src/styles/*.scss', ['sass-compile']);
   gulp.watch('./src/views/*.pug', ['pug-compile']);
 });
+
+gulp.task('default', ['watch']);
