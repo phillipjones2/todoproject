@@ -1,20 +1,19 @@
 const express = require('express'),
       app = express(),
-      fs = require('fs');
+      path = require('path');
+      PORT = 3000;
 
-app.use('/', express.static('public'));
-// app.use('/about', express.static('./public/about.html'));
-// app.get('/about', public.about);
+// Static Routing
+app.use(express.static(__dirname + '/public'));
+app.use("/", express.static("public"));
+app.use("/js", express.static("public/js"));
+app.use("/css", express.static("public/css"));
+
 app.get('/about', function (req, res) {
-  fs.readFile('./public/about.html', 'utf8', (err, data) => {
-    res.send(data);
-  })
+  res.sendFile(path.join(__dirname + '/public/about.html'));
 });
 
-// app.get('/', (req, res) => {
-//   res.send('Hello MANAsdfadfANANAN!');
-// });
 
-app.listen(3000, () => {
-  console.log('listening on port 3000.');
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}.`);
 });
