@@ -7,20 +7,26 @@ html
     script(src='./js/index.js' defer)
   body
     h4#logo taskrr
-    h1 Manage your tasks.
-      h3 An innovative new tool from the guys who brought you LLBuys Houses.
+    h1#index-heading Multi Tasking.
+    //- h3 An innovative new tool from the guys who brought you LLBuys Houses.
 
-      #index-form-container(class="flex-col")
-        #tabs(class="flex")
-          h2#sign-in-tab SIGN IN
-          h2#register-tab REGISTER
+    #index-form-container(class="flex-col")
+      #tabs(class="flex")
+        h2#sign-in-tab SIGN IN
+        h2#register-tab REGISTER
 
-        form#sign-in-form(action="/sign-in" class="hidden")
-          input(placeholder="username")
-          input(placeholder="password")
-          button do it
+      form#sign-in-form(action="/sign-in" class="hidden")
+        input(placeholder="email")
+        input(placeholder="password")
+        button do it
 
-        form#register-form(action="/register" class="flex-col")
-          each inputReq in ["username","email","password","password confrm"]
-            input(placeholder=inputReq name=inputReq)
-          button do it
+      form#register-form(action="/register" class="flex-col")
+        each inputReq in ["name","email","password","password confrm"]
+          input(placeholder=inputReq name=inputReq)
+        button do it
+
+    footer
+      ul
+        li GitHub
+        li About
+        li Something

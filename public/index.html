@@ -8,26 +8,31 @@
   </head>
   <body>
     <h4 id="logo">taskrr</h4>
-    <h1>Manage your tasks.
-      <h3>An innovative new tool from the guys who brought you LLBuys Houses.</h3>
-      <div class="flex-col" id="index-form-container">
-        <div class="flex" id="tabs">
-          <h2 id="sign-in-tab">SIGN IN</h2>
-          <h2 id="register-tab">REGISTER</h2>
-        </div>
-        <form class="hidden" id="sign-in-form" action="/sign-in">
-          <input placeholder="username">
-          <input placeholder="password">
-          <button>do it</button>
-        </form>
-        <form class="flex-col" id="register-form" action="/register">
-          <input placeholder="username" name="username">
-          <input placeholder="email" name="email">
-          <input placeholder="password" name="password">
-          <input placeholder="password confrm" name="password confrm">
-          <button>do it</button>
-        </form>
+    <h1 id="index-heading">Multi Tasking.</h1>
+    <div class="flex-col" id="index-form-container">
+      <div class="flex" id="tabs">
+        <h2 id="sign-in-tab">SIGN IN</h2>
+        <h2 id="register-tab">REGISTER</h2>
       </div>
-    </h1>
+      <form class="hidden" id="sign-in-form" action="/sign-in">
+        <input placeholder="email">
+        <input placeholder="password">
+        <button>do it</button>
+      </form>
+      <form class="flex-col" id="register-form" action="/register">
+        <input placeholder="name" name="name">
+        <input placeholder="email" name="email">
+        <input placeholder="password" name="password">
+        <input placeholder="password confrm" name="password confrm">
+        <button>do it</button>
+      </form>
+    </div>
+    <footer>
+      <ul>
+        <li>GitHub</li>
+        <li>About</li>
+        <li>Something</li>
+      </ul>
+    </footer>
   </body>
 </html>

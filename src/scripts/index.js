@@ -4,6 +4,8 @@ const signInTab = document.getElementById('sign-in-tab'),
       registerTab = document.getElementById('register-tab'),
       registerForm = document.getElementById('register-form');
 
+// When #sign-in-tab is clicked, hide the #register-form
+// and show the #sign-in-form.
 signInTab.addEventListener('click', ( ) => {
   if (!registerTab.classList.contains('hidden')) {
     registerForm.classList.add('hidden');
@@ -13,6 +15,8 @@ signInTab.addEventListener('click', ( ) => {
   }
 });
 
+// When #register-tab is clicked, hide the #sign-in-form
+// and show the #register-form.
 registerTab.addEventListener('click', ( ) => {
   if (!signInTab.classList.contains('hidden')) {
     signInForm.classList.add('hidden');
