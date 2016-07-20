@@ -1,6 +1,26 @@
 doctype
 html
   head
-    title test
+    title taskrr
+    link(href="/public/css/main.css",rel="stylesheet")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600' rel='stylesheet')
+    script(src='./js/index.js' defer)
   body
-    h1 TEST new newadsfsafsfsafffffffffffdddddd
+    h4#logo taskrr
+    h1 Manage your tasks.
+      h3 An innovative new tool from the guys who brought you LLBuys Houses.
+
+      #index-form-container(class="flex-col")
+        #tabs(class="flex")
+          h2#sign-in-tab SIGN IN
+          h2#register-tab REGISTER
+
+        form#sign-in-form(action="/sign-in" class="hidden")
+          input(placeholder="username")
+          input(placeholder="password")
+          button do it
+
+        form#register-form(action="/register" class="flex-col")
+          each inputReq in ["username","email","password","password confrm"]
+            input(placeholder=inputReq name=inputReq)
+          button do it
