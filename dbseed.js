@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'),
       faker = require('faker'),
-      User = require('./src/models/users'),
-      Todo = require('./src/models/todos');
+      User = require('./models/users'),
+      Todo = require('./models/todos');
 
 var users = [];
 
