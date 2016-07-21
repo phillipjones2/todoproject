@@ -4,12 +4,12 @@ const mongoose = require('mongoose'),
 
 var todoSchema = new Schema({
       todo: {type: String, required: true},
-      user: { type: ObjectId, ref: 'userSchema' }
+      user: { type: ObjectId, required: true, ref: 'userSchema' }
 },
 {
       timestamps: true
 });
 
-const Todo = mongoose.model('Todo', todoSchema);
+const Todos = mongoose.model('Todos', todoSchema);
 
-module.exports = Todo;
+module.exports = Todos;
