@@ -1,7 +1,18 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express'),
+      router = express.Router(),
+      mongoose = require('mongoose'),
+      User = require('../models/users'),
+      Todo = require('../models/todos');
 
-// example routing syntax
+
+router.post('/todos/all', (req, res) => {
+  Todo.find({
+  },(err, docs) => {
+    res.send(docs);
+  });
+});
+
+
 // router.post('/post/create', function(req, res) {
 //   res.send(SOMETHING);
 // });

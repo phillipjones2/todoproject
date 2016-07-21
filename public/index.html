@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>taskrr</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600" rel="stylesheet">
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <h4 id="logo">taskrr</h4>
+    <h1 id="index-heading">Multi Tasking.</h1>
+    <div class="flex-col" id="index-form-container">
+      <div class="flex" id="tabs">
+        <h2 id="sign-in-tab">SIGN IN</h2>
+        <h2 id="register-tab">REGISTER</h2>
+      </div>
+      <form class="hidden" id="sign-in-form" method="POST" action="auth/login">
+        <input type="text" name="username" placeholder="Username or Email">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Submit</button>
+      </form>
+      <form id="register-form" method="POST" action="auth/register">
+        <input type="text" name="username" placeholder="Username">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <footer>
+      <ul>
+        <li>GitHub</li>
+        <li>About</li>
+        <li>Something</li>
+      </ul>
+    </footer>
+  </body>
+</html>
