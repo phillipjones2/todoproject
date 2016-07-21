@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "mon": "nodemon -e js,css,html --watch public --watch index.js index.js & gulp watch"
+    "mon": "nodemon -e js,css,html --watch public --watch routes --watch index.js index.js & gulp watch"
   },
   "keywords": [],
   "author": "",
