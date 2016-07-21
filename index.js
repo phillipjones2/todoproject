@@ -37,7 +37,7 @@ db.once('open',function(){
 app.use('/', express.static('public'));
 
 // Static Routing
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 app.use("/", express.static("public"));
 app.use("/js", express.static("public/js"));
 app.use("/css", express.static("public/css"));
@@ -47,7 +47,7 @@ app.use('/auth', authenticate);
 app.use('/api', api);
 
 app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname + '/public/about.html'));
+  res.sendFile(path.join(`${__dirname}/public/about.html`));
 });
 
 // Server

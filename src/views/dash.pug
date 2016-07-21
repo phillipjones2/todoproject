@@ -1,0 +1,16 @@
+doctype
+html
+  head
+    title taskrr
+    link(href="css/main.css",rel="stylesheet")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600', rel='stylesheet')
+    script(src='js/dash.js' defer)
+  body
+    h4#logo trackrr
+    h3 hello, #[span#user-name]
+
+    #todo-container
+      #new-todo-container
+        input(class="new-todo-input")
+        button +
+      #todos

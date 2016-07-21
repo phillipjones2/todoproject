@@ -1,20 +1,32 @@
 doctype
 html
   head
-    title Todo app
-    link(href="css/main.css" rel="stylesheet")
+    title taskrr
+    link(href="css/main.css",rel="stylesheet")
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,600' rel='stylesheet')
+    script(src='js/index.js' defer)
   body
-    h1 Welcome to the Todo App
+    h4#logo taskrr
+    h1#index-heading Multi Tasking.
 
-    h2 Please Login
-    form(id="loginForm", method="POST", action="auth/login")
-      input(type="text" name="username" placeholder="Username or Email")
-      input(type="password" name="password" placeholder="Password")
-      button(type="submit") Submit
+    #index-form-container(class="flex-col")
+      #tabs(class="flex")
+        h2#sign-in-tab SIGN IN
+        h2#register-tab REGISTER
 
-    h2 Please Register
-    form(id="registerForm", method="POST", action="auth/register")
-      input(type="text" name="username" placeholder="Username")
-      input(type="email" name="email" placeholder="Email")
-      input(type="password" name="password" placeholder="Password")
-      button(type="submit") Submit
+      form#sign-in-form(method="POST", action="auth/login" class="hidden")
+        input(type="text" name="username" placeholder="Username or Email")
+        input(type="password" name="password" placeholder="Password")
+        button(type="submit") Submit
+
+      form#register-form(method="POST", action="auth/register")
+        input(type="text" name="username" placeholder="Username")
+        input(type="email" name="email" placeholder="Email")
+        input(type="password" name="password" placeholder="Password")
+        button(type="submit") Submit
+
+    footer
+      ul
+        li GitHub
+        li About
+        li Something

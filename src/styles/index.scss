@@ -1,0 +1,67 @@
+#logo {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 2.4rem;
+}
+
+#index-heading {
+  text-align: center;
+  width: 100%;
+}
+
+#index-form-container {
+  margin: 10px auto;
+  width: 90%;
+  padding: 10px;
+  background: blue;
+  align-items: center;
+  form {
+    width: 90%;
+    input {
+      height: 40px;
+
+      &::-webkit-input-placeholder {
+        padding-left: 15px;
+        font-size: 1.8rem;
+      }
+    }
+    button {
+      height: 40px;
+
+    }
+  }
+}
+
+#tabs {
+  width: 100%;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+}
+
+#tabs h2 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: red;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 70%;
+  box-shadow: 0 -0.05rem 12px black;
+  ul {
+    width: 100vw;
+    text-align: center;
+    li {
+      display: inline;
+      margin: 0 25px;
+    }
+  }
+}
