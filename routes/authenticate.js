@@ -6,8 +6,10 @@ const express = require('express'),
 
 // Register Route
 router.post('/register', function(req, res) {
+  console.log(req.body);
   var newUser = new User(req.body);
 
+  console.log(newUser);
   newUser.save(function(err, doc) {
     if(err) {
       res.send({state: 'failure', user: null, message: err});

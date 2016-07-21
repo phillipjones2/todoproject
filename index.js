@@ -2,12 +2,18 @@ const express = require('express'),
       app = express(),
       path = require('path'),
       PORT = 3000,
-      mongoose = require('mongoose');
+      mongoose = require('mongoose'),
+      bodyParser = require("body-parser");
 
 // Routing Modules
 const authenticate = require('./routes/authenticate.js');
       api = require('./routes/api.js');
 
+// Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// Mongoose Connection Setup
 mongoose.connect('mongodb://localhost/todoProject');
 const db = mongoose.connection;
 db.on('err', console.error.bind(console, 'connection error:'));
