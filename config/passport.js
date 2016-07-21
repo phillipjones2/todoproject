@@ -1,6 +1,6 @@
-const passport = require('passport');
-      passportLocal = require('passport-local').Strategy;
-      User = require('../models/users.js');
+const passport = require('passport'),
+      passportLocal = require('passport-local').Strategy,
+      User = require('../models/users.js'),
       bcrypt = require('bcryptjs');
 
 // passport auth strategy
