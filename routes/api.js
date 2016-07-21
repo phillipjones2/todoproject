@@ -39,9 +39,19 @@ router.put('/todos/:todo_id', (req, res) => {
           data:doc
       });
     });
-  })
+  });
 });
 
+router.delete('/todos/:todo_id', (req, res) => {
+  // console.log(req.body);
+  Todo.remove({_id: req.params.todo_id}, (err) => {
+    if (err)
+      res.send(err);
+    else {
+      res.send('Deleted Todo');
+    }
+  });
+});
 
 // router.post('/post/create', function(req, res) {
 //   res.send(SOMETHING);
