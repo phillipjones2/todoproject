@@ -16,12 +16,12 @@ html
         h2#register-tab REGISTER
 
       form#sign-in-form(action="/sign-in" class="hidden")
-        input(placeholder="email")
+        input(placeholder="username")
         input(placeholder="password")
         button do it
 
       form#register-form(action="/register" class="flex-col")
-        each inputReq in ["name","email","password","password confrm"]
+        each inputReq in ["username","email","password","password confrm"]
           input(placeholder=inputReq name=inputReq)
         button do it
 
