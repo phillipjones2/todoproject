@@ -1,5 +1,7 @@
 const express = require('express'),
       app = express(),
+      path = require('path'),
+      PORT = 3000,
       fs = require('fs'),
       mongoose = require('mongoose'),
       faker = require('faker');
@@ -26,17 +28,20 @@ db.once('open',function(){
   console.log(todos[Math.floor(Math.random()*100)]);
 });
 
-
-
 // Routes
 app.use('/', express.static('public'));
+
+// Static Routing
+app.use(express.static(__dirname + '/public'));
+app.use("/", express.static("public"));
+app.use("/js", express.static("public/js"));
+app.use("/css", express.static("public/css"));
+
 app.get('/about', function (req, res) {
-  fs.readFile('./public/about.html', 'utf8', (err, data) => {
-    res.send(data);
-  })
+  res.sendFile(path.join(__dirname + '/public/about.html'));
 });
 
 // Server
-app.listen(3000, () => {
-  console.log('listening on port 3000.');
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}.`);
 });
