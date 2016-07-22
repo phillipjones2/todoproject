@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="256px"
+	 height="256px" viewBox="0 0 256 256" enable-background="new 0 0 256 256" xml:space="preserve">
+<font horiz-adv-x="1000">
+<!-- Copyright (C) 2000, 2007 Hoefler &amp; Frere-Jones. http://www.typography.com -->
+<!-- Copyright: Copyright 2016 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Gotham-Light" units-per-em="1000" underline-position="-100" underline-thickness="50"/>
+<missing-glyph horiz-adv-x="500" d="M0,-200l500,0l0,1000l-500,0M71,750l358,0l-179,-390M50,-76l0,752l172,-376M450,676l0,-752l-172,376M250,240l179,-390l-358,0z"/>
+<glyph unicode="D" horiz-adv-x="782" d="M104,0l233,0C557,0 709,153 709,350l0,2C709,549 557,700 337,700l-233,0M156,48l0,604l181,0C532,652 655,516 655,350l0,-2C655,181 532,48 337,48z"/>
+<glyph unicode="O" horiz-adv-x="850" d="M424,-12C636,-12 777,159 777,350l0,2C777,543 638,712 426,712C214,712 73,541 73,350l0,-2C73,157 212,-12 424,-12M426,35C253,35 127,177 127,350l0,2C127,525 251,665 424,665C597,665 723,523 723,350l0,-2C723,175 599,35 426,35z"/>
+<glyph unicode="T" horiz-adv-x="648" d="M298,0l52,0l0,652l244,0l0,48l-540,0l0,-48l244,0z"/>
+</font>
+
+	<g id="border">
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="6.6683" stroke-miterlimit="10" d="M251.9,236.5c0,8.5-7,15.5-15.5,15.5H19.5
+			C11,252,4,245,4,236.5V19.6c0-8.5,7-15.5,15.5-15.5h216.9c8.5,0,15.5,7,15.5,15.5V236.5z"/>
+	</g>
+</g>
+<g id="TODO-text">
+	<rect x="41.9" y="36" fill="none" width="195.9" height="202.5"/>
+	<text transform="matrix(1 0 0 1 44.1025 115.9478)"><tspan x="0" y="0" font-family="'Gotham-Light'" font-size="109.4988" letter-spacing="10">T</tspan><tspan x="81" y="0" font-family="'Gotham-Light'" font-size="109.4988" letter-spacing="7">O</tspan><tspan x="-2.2" y="103.6" font-family="'Gotham-Light'" font-size="109.4988" letter-spacing="-3">D</tspan><tspan x="80.2" y="103.6" font-family="'Gotham-Light'" font-size="109.4988" letter-spacing="7">O</tspan></text>
+</g>
+</svg>
