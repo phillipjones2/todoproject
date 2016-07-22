@@ -16,12 +16,12 @@ strong, small, form, input, button, ol {
   strong:active, small:focus, small:hover, small:active, form:focus, form:hover, form:active, input:focus, input:hover, input:active, button:focus, button:hover, button:active, ol:focus, ol:hover, ol:active {
     border: none;
     outline: none;
-    background: none;
     text-decoration: none; }
 
 @font-face {
   font-family: GothamLight;
-  src: url(./fonts/Gotham-Light.otf); }
+  src: url(./assets/fonts/Gotham-Light.otf); }
+
 html {
   font-size: 62.5%; }
 
@@ -55,11 +55,18 @@ h4 {
 small, .font_small {
   font-size: 0.707em; }
 
+button {
+  background-color: white;
+  border-radius: 0 20px 0 20px;
+  border: 1px solid black;
+  padding: 13px 20px 10px;
+  font-family: GothamLight;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0px #adedd2; }
+
 nav {
   width: 100%; }
 
 @media (max-width: 325px) {
   nav {
     height: 100px; } }
-
-/*# sourceMappingURL=style.css.map */
