@@ -15,7 +15,7 @@ gulp.task('pug-compile', () => {
 });
 
 gulp.task('sass-compile', () => {
-  return gulp.src('./src/styles/main.scss')
+  return gulp.src(['./src/styles/main.scss', './src/styles/guide.scss', './src/styles/dash.scss'])
     .pipe(sass())
     .pipe(gulp.dest('./public/css/'))
     .pipe(livereload());
