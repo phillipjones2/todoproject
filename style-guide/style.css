@@ -17,22 +17,21 @@ strong, small, form, input, button, ol {
     outline: none;
     text-decoration: none; }
 
+body {
+  padding: 50px; }
+
 @font-face {
   font-family: GothamLight;
   src: url(./assets/fonts/Gotham-Light.otf); }
-
 @font-face {
   font-family: GothamMedium;
   src: url(./assets/fonts/Gotham-Medium.otf); }
-
 @font-face {
   font-family: GothamThin;
   src: url(./assets/fonts/Gotham-Thin.otf); }
-
 @font-face {
   font-family: GothamBold;
   src: url(./assets/fonts/Gotham-Bold.otf); }
-
 html {
   font-size: 62.5%; }
 
@@ -69,19 +68,20 @@ small, .font_small {
 button {
   background-color: white;
   border-radius: 0 11px 0 11px;
-  border: 1px solid black;
+  border: 2px solid black;
   padding: 8px 15px 7px;
   font-family: GothamMedium;
   font-size: 1.7rem;
   text-transform: uppercase;
-  box-shadow: 3px 3px 0px #adedd2;
-  transition: all 0.5s;
-  position: relative; }
-  button:focus {
-    position: relative;
-    top: 4px;
-    left: 4px;
-    box-shadow: 0 0 0 black; }
+  box-shadow: 0px 0px 0px #adedd2;
+  transition: all .5s;
+  position: relative;
+  top: 0;
+  left: 0; }
+  button:active {
+    border-radius: 11px 0 11px 0;
+    box-shadow: 3px 3px 0px #adedd2;
+    transform: rotateY(360deg); }
 
 nav {
   width: 100%; }
@@ -89,3 +89,5 @@ nav {
 @media (max-width: 325px) {
   nav {
     height: 100px; } }
+
+/*# sourceMappingURL=style.css.map */
