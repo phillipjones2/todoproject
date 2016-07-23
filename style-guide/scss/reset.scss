@@ -9,7 +9,6 @@ strong, small, form, input, button, ol {
   box-sizing: border-box;
 
   &:focus, &:hover, &:active {
-    border: none;
     outline: none;
     text-decoration: none;
   }
