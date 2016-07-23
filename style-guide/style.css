@@ -22,12 +22,24 @@ strong, small, form, input, button, ol {
   font-family: GothamLight;
   src: url(./assets/fonts/Gotham-Light.otf); }
 
+@font-face {
+  font-family: GothamMedium;
+  src: url(./assets/fonts/Gotham-Medium.otf); }
+
+@font-face {
+  font-family: GothamThin;
+  src: url(./assets/fonts/Gotham-Thin.otf); }
+
+@font-face {
+  font-family: GothamBold;
+  src: url(./assets/fonts/Gotham-Bold.otf); }
+
 html {
   font-size: 62.5%; }
 
 body {
   font-size: 1.8rem;
-  font-family: monospace;
+  font-family: GothamLight;
   line-height: 1.45;
   color: black; }
 
@@ -58,9 +70,9 @@ small, .font_small {
 button {
   background-color: white;
   border-radius: 0 11px 0 11px;
-  border: .75px solid black;
+  border: 1.5px solid black;
   padding: 8px 15px 7px;
-  font-family: GothamLight;
+  font-family: GothamMedium;
   text-transform: uppercase;
   box-shadow: 3px 3px 0px #adedd2; }
 
