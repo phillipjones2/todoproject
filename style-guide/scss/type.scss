@@ -2,7 +2,7 @@
 
 
 
-
+@import "variables";
 @font-face {
   font-family: GothamLight;
   src: url(./assets/fonts/Gotham-Light.otf);
@@ -14,7 +14,7 @@ html {
 
 body {
   font-size: 1.8rem;
-  font-family: GothamLight;
+  font-family: monospace;
   line-height: 1.45;
   color: $color0;
 }

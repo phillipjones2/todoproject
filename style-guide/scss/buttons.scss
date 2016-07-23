@@ -1,13 +1,13 @@
 
 
-
+@import "variables";
 
 
 button{
   background-color: white;
-  border-radius: 0 20px 0 20px;
-  border: 1px solid black;
-  padding: 13px 20px 10px;
+  border-radius: 0 11px 0 11px;
+  border: .75px solid black;
+  padding: 8px 15px 7px;
   font-family: GothamLight;
   text-transform: uppercase;
   box-shadow: 3px 3px 0px $color2;

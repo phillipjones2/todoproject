@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "mon": "nodemon -e js,css,html --watch public --watch index.js index.js & gulp",
-    "sass-watch": "sass --watch ./style-guide/scss/style.scss:./style-guide/style.css"
+    "sass-watch": "sass --watch ./style-guide/scss/style.scss:./style-guide/style.css && live-server",
+    "dylan-watch": "node-sass --watch ./style-guide/scss/style.scss ./style-guide/style.css"
   },
   "keywords": [],
   "author": "",

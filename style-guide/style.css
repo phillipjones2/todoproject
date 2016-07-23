@@ -1,4 +1,4 @@
-section, aside, header, nav,
+html, body, div, section, aside, header, nav,
 footer, ul, li, p, h1, h2, h3, h4, h5, h6, em,
 strong, small, form, input, button, ol {
   padding: 0;
@@ -7,7 +7,7 @@ strong, small, form, input, button, ol {
   border: none;
   text-decoration: none;
   box-sizing: border-box; }
-  section:focus, section:hover, section:active, aside:focus, aside:hover, aside:active, header:focus, header:hover, header:active, nav:focus, nav:hover, nav:active,
+  html:focus, html:hover, html:active, body:focus, body:hover, body:active, div:focus, div:hover, div:active, section:focus, section:hover, section:active, aside:focus, aside:hover, aside:active, header:focus, header:hover, header:active, nav:focus, nav:hover, nav:active,
   footer:focus,
   footer:hover,
   footer:active, ul:focus, ul:hover, ul:active, li:focus, li:hover, li:active, p:focus, p:hover, p:active, h1:focus, h1:hover, h1:active, h2:focus, h2:hover, h2:active, h3:focus, h3:hover, h3:active, h4:focus, h4:hover, h4:active, h5:focus, h5:hover, h5:active, h6:focus, h6:hover, h6:active, em:focus, em:hover, em:active,
@@ -21,12 +21,13 @@ strong, small, form, input, button, ol {
 @font-face {
   font-family: GothamLight;
   src: url(./assets/fonts/Gotham-Light.otf); }
+
 html {
   font-size: 62.5%; }
 
 body {
   font-size: 1.8rem;
-  font-family: GothamLight;
+  font-family: monospace;
   line-height: 1.45;
   color: black; }
 
@@ -56,9 +57,9 @@ small, .font_small {
 
 button {
   background-color: white;
-  border-radius: 0 20px 0 20px;
-  border: 1px solid black;
-  padding: 13px 20px 10px;
+  border-radius: 0 11px 0 11px;
+  border: .75px solid black;
+  padding: 8px 15px 7px;
   font-family: GothamLight;
   text-transform: uppercase;
   box-shadow: 3px 3px 0px #adedd2; }
@@ -69,5 +70,3 @@ nav {
 @media (max-width: 325px) {
   nav {
     height: 100px; } }
-
-/*# sourceMappingURL=style.css.map */
