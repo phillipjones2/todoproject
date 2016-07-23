@@ -12,5 +12,14 @@ button{
   font-size: 1.7rem;
   text-transform: uppercase;
   box-shadow: 3px 3px 0px $color2;
+  transition: all 0.5s;
+  position: relative;
+  &:focus{
+    position: relative;
+    top:4px;
+    left:4px;
+    box-shadow:0 0 0 black;
+
+  }
 
 }
