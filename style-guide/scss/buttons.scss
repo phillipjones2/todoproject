@@ -11,8 +11,8 @@ button{
   font-family: GothamMedium;
   font-size: 1.7rem;
   text-transform: uppercase;
-  box-shadow: 0px 0px 0px $color2;
-  transition: all .5s;
+  box-shadow: 3px 3px 3px $color2;
+  transition: all .25s;
   position: relative;
   top: 0;
   left: 0;
@@ -22,8 +22,32 @@ button{
     // left: 3px;
     border-radius: 11px 0 11px 0;
     box-shadow: 3px 3px 0px $color2;
-    transform: rotateY(360deg);
+    //transform: rotateY(360deg);
+    border: 0px solid $color2;
+    // transform: matrix(1.0, 2.0, 3.0, 4.0, 5.0, 6.0);
+    //transform: translate(12px, 50%);
+    //transform: translateX(2em);
+     //transform: translateY(3in);
+   // transform: scale(2, 0.5);
+    //  transform: scaleX(.85) scaleY(0.85);
+    //  transform: scaleY(0.5);
+    // transform: rotate(45.5turn);
+    // transform: skew(30deg, 20deg);
+    // transform: skewX(30deg);
+    // transform: skewY(1.07rad);
+    // transform: matrix3d(1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0);
+    //  transform: translate3d(2px, 5%, 1rem);
+    // transform: translateZ(2px);
+    // transform: scale3d(5, 2, 3);
+    // transform: scaleZ(0.3);
+    // transform: rotate3d(1, 2.0, 3.0, 2deg);
+    //  transform: rotateX(90deg);
+    // transform: rotateY(10deg);
+    // transform: rotateZ(10deg);
+    // transform: perspective(17px);
 
+      transform: scaleX(.85) scaleY(0.85);
+//transition value .25s looks cool
   }
 
 }
